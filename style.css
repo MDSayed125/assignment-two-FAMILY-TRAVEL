@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;800;900&display=swap');
+
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+header {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.nav-container img {
+    width: 50px;
+    margin-right: 15px;
+
+
+}
+
+.nav-container h1 {
+    font-size: 26px;
+    font-weight: 800;
+
+}
+
+.nav-container span {
+    color: #FF5400;
+}
+
+.items-container {
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.items-container .home {
+    color: #FF5400;
+}
+
+.items-container img {
+    /* display: none; */
+}
+
+/* banner section.... */
+/* banner section.... */
+/* banner section.... */
+
+.banner {
+    max-width: 1170px;
+    height: 500px;
+    margin-top: 100px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./Images/Group\ 13\ \(1\)\ \(1\).png);
+    text-align: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.banner-text {
+    position: absolute;
+
+
+}
+
+.banner-text h1 {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+.banner-text p {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 200px;
+}
+
+.out-box {
+    width: 150px;
+    opacity: 70%;
+    background: (rgba(255, 255, 255, 0.30));
+    border-radius: 16px;
+    display: flex;
+    padding: 16px;
+    margin-left: 140px;
+    gap: 15px;
+}
+
+
+
+.out-box .banner-input {
+    width: 170px;
+    height: 50px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+}
+
+.out-box button {
+    background-color: #FF5400;
+}
+
+/* main section...... */
+/* main section...... */
+/* main section...... */
+
+
+.our-tour {
+    max-width: 1170px;
+    margin: 100px auto;
+    display: flex;
+    height: 550px;
+    padding: 10px;
+    position: relative;
+
+}
+
+.tour-text {
+    width: 50%;
+}
+
+.tour-img {
+    size-adjust: cover;
+    width: 50%;
+}
+
+.tour-text h1 {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.tour-text p {
+    margin: 20px 0;
+    color: #131318;
+    font-family: Mulish;
+    font-size: 22px;
+    font-weight: 500;
+
+}
+
+.tour-text li {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.tour-text button {
+    background-color: #FF5400;
+    font-size: 24px;
+    font-family: Mulish;
+    padding: 10px;
+    margin-top: 180px;
+
+
+}
+
+/* destination section...... */
+/* destination section...... */
+/* destination section...... */
+
+.destination {
+    border: 2px solid red;
+    background-color: aliceblue;
+    max-width: 1170px;
+    margin: 100px auto;
+    position: relative;
+    padding: 10px;
+
+
+}
+
+
+.destination-text {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.destination-text p {
+    margin: 20px;
+
+}
+
+.line-one {
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr) ;
+    grid-gap: 24px; 
+    margin-bottom: 24px;
+
+}
+
+.line-one img{
+    width: 100%;
+}
+
+.line-two{
+    display: grid;
+    grid-template-columns: repeat( );
+    grid-gap: 24px;
+
+
+
+}
+
+.line-two img{ 
+    width: 100%;
+    height: 100%;
+
+
+}
+
