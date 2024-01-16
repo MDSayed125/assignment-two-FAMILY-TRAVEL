@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 'Mulish', sans-serif;
 
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;800;900&display=swap');
 
 body {
     font-family: 'Mulish', sans-serif;
@@ -150,12 +152,12 @@ nav {
 }
 
 .tour-text {
-    width: 50%;
+    width: 100%;
 }
 
 .tour-img {
     size-adjust: cover;
-    width: 50%;
+    width: 100%;
 }
 
 .tour-text h1 {
@@ -183,11 +185,12 @@ nav {
 }
 
 .tour-text button {
-    background-color: #FF5400;
-    font-size: 24px;
     font-family: Mulish;
+    background-color: #FF5400;
+    border-radius: 16px;
+    font-size: 24px;
     padding: 10px;
-    margin-top: 180px;
+    margin-top: 120px;
 
 
 }
@@ -197,54 +200,416 @@ nav {
 /* destination section...... */
 
 .destination {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     background-color: aliceblue;
     max-width: 1170px;
     margin: 100px auto;
     position: relative;
     padding: 10px;
-
-
 }
-
 
 .destination-text {
     align-items: center;
     text-align: center;
     justify-content: center;
-
 }
 
 .destination-text p {
     margin: 20px;
-
 }
 
 .line-one {
     display: grid;
-    grid-template-columns:  repeat(2, 1fr) ;
-    grid-gap: 24px; 
-    margin-bottom: 24px;
-
-}
-
-.line-one img{
-    width: 100%;
-}
-
-.line-two{
-    display: grid;
-    grid-template-columns: repeat( );
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 24px;
 
+}
+
+/* .line-one .img-one{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 03)) url(./Images/Rectangle\ 5.png);
+
+} */
+
+
+.line-one img {
+    width: 100%;
+
+}
+
+.line-one .maldives {
+    position: absolute;
+    font-size: 50px;
+    margin-top: 100px;
+    margin-left: 120px;
+    color: #FFF;
+
+}
+
+.line-one .indonesia {
+    position: absolute;
+    font-size: 50px;
+    margin-top: 100px;
+    margin-left: 630px;
+    color: #FFF;
+}
+
+
+
+.line-two {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 24px;
+    margin: 24px 0;
+}
+
+.line-two img {
+    width: 100%;
+    height: 100%;
+}
+
+.line-two .srilanka {
+    position: absolute;
+    font-size: 46px;
+    margin-top: 100px;
+    margin-left: 30px;
+    color: #FFF;
+
+}
+
+.line-two .america {
+    position: absolute;
+    font-size: 46px;
+    margin-top: 100px;
+    margin-left: 350px;
+    color: #FFF;
+}
+
+.line-two .kashmir {
+    position: absolute;
+    font-size: 46px;
+    margin-top: 100px;
+    margin-left: 800px;
+    color: #FFF;
+}
+
+.line-two .img-two {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+
+.line-three {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+}
+
+.line-three img {
+    width: 100%;
+    height: 100%;
+}
+
+.line-three .bangladesh {
+    position: absolute;
+    font-size: 46px;
+    margin-top: 100px;
+    margin-left: 75px;
+    color: #FFF;
+
+}
+
+.line-three .bandarban {
+    position: absolute;
+    font-size: 46px;
+    margin-top: 100px;
+    margin-left: 550px;
+    color: #FFF;
+}
+
+
+.line-three .img-one {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.line-three .img-two {
+    grid-column-start: 3;
+    grid-column-end: 6;
+
+}
+
+/* destination section ends there..... */
+/* destination section ends there..... */
+/* destination section ends there..... */
+
+
+.why-choose-us {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 10px;
+
+}
+
+.why-choose-us h1 {
+    align-items: center;
+    text-align: center;
+}
+
+.why-choose-us .parant-p {
+    align-items: center;
+    text-align: center;
+
+}
+
+
+
+.why-choose-us h1 {
+    font-size: 2em;
+    font-weight: 800;
+    margin-bottom: 20px;
+
+}
+
+.row-one {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+
+}
+
+.one-child {
+    padding: 20px;
+    width: 100%;
+    border-radius: 16px;
+    border: 3px dotted rgba(209, 117, 13, 0.2);
+    background: rgba(228, 132, 23, 0.05);
+}
+
+.one-child h3 {
+    margin: 20px auto;
+}
+
+.two-child {
+    padding: 20px;
+    width: 100%;
+    border-radius: 16px;
+    border: 3px dotted rgba(209, 117, 13, 0.2);
+    background: rgba(12, 179, 221, 0.05);
+}
+
+.two-child h3 {
+    margin: 20px auto;
+}
+
+.third-child {
+    margin: 20px auto;
+    width: 50%;
+    padding: 20px;
+    border-radius: 16px;
+    border: 3px dotted rgba(209, 117, 13, 0.2);
+    background: rgba(226, 39, 39, 0.05);
+
+}
+
+.third-child h3 {
+    margin: 20px auto;
+}
+
+
+/* Newsletter Part..... */
+/* Newsletter Part..... */
+/* Newsletter Part..... */
+
+.newslater {
+    max-width: 1170px;
+    margin: 100px auto;
+    padding: 10px;
+    display: flex;
+    position: relative;
+}
+
+.newsletter-text {
+    width: 100%;
+}
+
+.newslater-img {
+    size-adjust: cover;
+    width: 100%;
+
+}
+
+.stiker {
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    position: absolute;
+    width: 300px;
+    height: 120px;
+    transform: rotate(-19.628deg);
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #FF5400;
+    font-size: 1.2em;
+    margin-top: -180px;
+    margin-left: 360px;
+}
+
+.stiker span{
+    font-size: 2em;
+}
+
+.newsletter-text h2 {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.newsletter-text p {
+    margin: 30px auto;
+}
+
+.input-fild {
+    margin-top: 50px;
+}
+.input-fild .class-one {
+    border-radius: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 52px;
+    flex-shrink: 0;
+    padding: 20px;
+}
+
+.input-fild button {
+    background-color: #FF5400;
+}
+
+/* footer section...... */
+/* footer section...... */
+/* footer section...... */
+
+footer {
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 1440px;
+    height: 600px;
+    background: rgba(19, 19, 24, 0.05);
+    position: relative;
+
+}
+
+.main-footer {
+
+    width: 100%;
+
+}
+
+.social-icon {
+    justify-content: center;
+    display: flex;
+    padding-top: 250px;
 
 
 }
 
-.line-two img{ 
-    width: 100%;
-    height: 100%;
+.social-icon a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 20px;
+    background-color: #FFF;
+    border-radius: 50%;
+
+}
+
+.social-icon a i {
+    font-size: 3em;
+    color: black;
+
+}
 
 
+/* Hover  Effect social-icon..... */
+/* Hover  Effect social-icon..... */
+/* Hover  Effect social-icon..... */
+
+.social-icon a:hover {
+    background-color: #070211;
+    transition: 0.5s;
+
+}
+
+.social-icon a:hover i {
+    color: white;
+    transition: 0.5s;
+
+}
+
+/* .footer-nav {
+    margin: 30px 30px;
+} */
+
+/* .footer-nav ul {
+    display: flex;
+    justify-content: center;
+} */
+
+/* .footer-nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 30px;
+    font-size: 1.3em;
+    opacity: 0.5;
+    transition: 0.5s;
+
+} */
+
+/* .footer-nav ul li a:hover {
+    opacity: 1;
+} */
+
+.footter-button {
+
+    padding: 30px;
+    text-align: center;
+
+}
+.designer{
+    color: red;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.footter-button p {
+    color: black;
+    font-size: 1.2em;
+}
+
+.footer-address {
+
+    border: 1px white dotted;
+
+}
+.footer-logo{
+    gap: 10px;
+    margin: 100px auto;
+    margin-bottom: -200px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.footer-logo span{
+    color: #FF5400;
+}
+
+.footer-text{
+    margin: 250px auto;
+    margin-bottom: -200px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
