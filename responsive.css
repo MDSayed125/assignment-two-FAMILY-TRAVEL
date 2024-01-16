@@ -1,13 +1,176 @@
 @media screen and (max-width: 576px) {
-    /* nav{
+
+
+
+
+    .nav-container {
+        flex-wrap: nowrap;
+    }
+
+    .items-container img {
+        display: flex;
+        padding-left: 200px;
+    }
+
+    .items-container h3 {
+        display: none;
+    }
+
+
+
+    .banner {
+        width: 335px;
+        height: 483px;
+        flex-shrink: 0;
+        width: 100%;
+    }
+
+
+
+    .banner-text h1 {
+        text-align: center;
+        color: #FFF;
+        font-family: Mulish;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        margin-left: -10px;
+    }
+
+    .banner-text p {
+        color: #FFF;
+        text-align: center;
+        font-family: Mulish;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21px;
+        margin-left: 70px;
+
+    }
+
+    .out-box {
+        text-align: center;
+        display: flex;
+        width: 287px;
+        padding: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .out-box .banner-input {
+        width: 255px;
+        height: 52px;
+        flex-shrink: 0;
+    }
+
+
+
+    .our-tour {
+        flex-direction: column;
+        margin-bottom: 550px;
+
+    }
+
+    .tour-img {
+        margin-top: 30px;
+        margin-bottom: 100px;
+        height: 100%;
+    }
+
+
+    .img-one,
+    .img-two,
+    .img-three {
+        display: none;
+    }
+
+    .destination-img p {
+        display: none;
+    }
+
+    .responsive-destination {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: 300px;
+        position: relative;
+        margin-bottom: 1800px;
+    }
+
+    .responsive-destination img {
+        width: 500px;
+        height: 300px;
+        margin: 10px auto;
+    }
+
+
+
+    .card-text {
+        width: 303px;
+        height: 297px;
+        flex-shrink: 0;
+    }
+    .second-card-text{
+        width: 303px;
+        height: 297px;
+        flex-shrink: 0;
+    }
+    
+    .fast-line {
+        color: #010111;
+        font-family: Mulish;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .card-discription {
+        font-size: 0.8em;
+    }
+
+    .row-one{ 
         flex-direction: column;
     }
 
-    .items-container{
-        display: none;
-
+    .third-child{
+        width: 100%;
     }
-    .items-container img{
-        align-items: flex-end;
-    } */
+
+    .newslater{
+        flex-direction: column;
+    }
+    .newsletter-text{
+        width: 50%;
+        margin:  0 auto;
+    }
+    .newslater-img img{
+        width: 500px;
+    }
+    .newslater-img .stiker{
+        width: 150px;
+        height: 100px ;
+        margin-left: 340px;
+    }
+
+    .stiker{
+        font-size: 0.9em;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

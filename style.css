@@ -48,6 +48,7 @@ nav {
 }
 
 .items-container {
+    /* border: #FF5400 1px solid; */
     display: flex;
     font-size: 16px;
     font-weight: 400;
@@ -61,7 +62,7 @@ nav {
 }
 
 .items-container img {
-    /* display: none; */
+    display: none;
 }
 
 /* banner section.... */
@@ -83,6 +84,8 @@ nav {
 
 .banner-text {
     position: absolute;
+    margin-top: -20px;
+    margin-left: -20px;
 
 
 }
@@ -109,7 +112,6 @@ nav {
     margin-bottom: 30px;
     margin-left: 200px;
 }
-
 .out-box {
     width: 150px;
     opacity: 70%;
@@ -188,7 +190,8 @@ nav {
     font-family: Mulish;
     background-color: #FF5400;
     border-radius: 16px;
-    font-size: 24px;
+    font-size: 25px;
+    font-weight: 500;
     padding: 10px;
     margin-top: 120px;
 
@@ -198,6 +201,10 @@ nav {
 /* destination section...... */
 /* destination section...... */
 /* destination section...... */
+
+.responsive-destination{
+    display: none;
+}
 
 .destination {
     /* border: 2px solid red; */
@@ -456,7 +463,7 @@ nav {
     margin-left: 360px;
 }
 
-.stiker span{
+.stiker span {
     font-size: 2em;
 }
 
@@ -474,6 +481,7 @@ nav {
 .input-fild {
     margin-top: 50px;
 }
+
 .input-fild .class-one {
     border-radius: 20px;
     margin-bottom: 20px;
@@ -548,36 +556,14 @@ footer {
 
 }
 
-/* .footer-nav {
-    margin: 30px 30px;
-} */
-
-/* .footer-nav ul {
-    display: flex;
-    justify-content: center;
-} */
-
-/* .footer-nav ul li a {
-    color: white;
-    text-decoration: none;
-    margin: 30px;
-    font-size: 1.3em;
-    opacity: 0.5;
-    transition: 0.5s;
-
-} */
-
-/* .footer-nav ul li a:hover {
-    opacity: 1;
-} */
-
 .footter-button {
 
     padding: 30px;
     text-align: center;
 
 }
-.designer{
+
+.designer {
     color: red;
     font-size: 1.2em;
     font-weight: 600;
@@ -593,7 +579,8 @@ footer {
     border: 1px white dotted;
 
 }
-.footer-logo{
+
+.footer-logo {
     gap: 10px;
     margin: 100px auto;
     margin-bottom: -200px;
@@ -601,11 +588,12 @@ footer {
     display: flex;
     justify-content: center;
 }
-.footer-logo span{
+
+.footer-logo span {
     color: #FF5400;
 }
 
-.footer-text{
+.footer-text {
     margin: 250px auto;
     margin-bottom: -200px;
     align-items: center;
@@ -613,3 +601,184 @@ footer {
     justify-content: center;
 }
 
+
+
+
+
+/* Extra mark part..... */
+/* Extra mark part..... */
+/* Extra mark part..... */
+
+.deals-discount {
+    max-width: 1170px;
+    padding: 10px;
+    margin: 100px auto;
+    
+}
+
+.deals-discount-text {
+    margin: 10px auto;
+    width: 50%;
+    text-align: center;
+
+}
+
+.fast-card {
+    border: #13131800 1px dotted;
+    max-width: 1170px;
+    height: 500px;
+    margin: 20px auto;
+    padding: auto 50px;
+    border-radius: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Images/Group\ 39.png);
+
+}
+
+.second-card {
+    border: #13131800 1px dotted;
+    max-width: 1170px;
+    height: 500px;
+    margin: 50px auto;
+    padding: auto 50px;
+    border-radius: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Images/Group\ 40.png);
+
+}
+
+.third-card {
+    border: #13131800 1px dotted;
+    max-width: 1170px;
+    height: 500px;
+    margin: 50px auto;
+    padding: auto 50px;
+    border-radius: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Images/Group\ 39.png);
+
+}
+
+.card-text {
+    padding: 20px;
+    height: 100%;
+    margin: 50px auto;
+    margin-left: 40%;
+    width: 550px;
+    height: 350px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+
+
+}
+
+.second-card-text {
+    padding: 20px;
+    height: 100%;
+    margin: 50px auto;
+    margin-right: 40%;
+    width: 550px;
+    height: 350px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+}
+
+.fast-line {
+    display: flex;
+    justify-content: space-around;
+}
+
+.one-icon {
+    display: flex;
+}
+
+.two-icon {
+    display: flex;
+}
+
+.three-icon {
+    display: flex;
+}
+
+.card-discription h2 {
+
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.card-discription h3 {
+
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #FF5400;
+}
+
+.card-discription p {
+    margin: 20px auto;
+}
+
+
+.card-text button {
+    font-family: Mulish;
+    background-color: #FF5400;
+    border-radius: 16px;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.second-card-text button {
+    font-family: Mulish;
+    background-color: #FF5400;
+    border-radius: 16px;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.second-card-text h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+
+}
+
+.second-card-text h3 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #FF5400;
+
+}
+
+.deals-discount-button {
+    margin: 10px auto;
+    width: 25%;
+    text-align: center;
+}
+
+.deals-discount-button button {
+    font-size: 1.5em;
+    width: 210px;
+    height: 52px;
+    font-size: 20px;
+    flex-shrink: 0;
+    font-weight: 800;
+    border-radius: 16px;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-style: normal;
+    line-height: normal;
+    background-color: #FF5400;
+
+}
+
+.our-tour video{
+    height: 100%;
+    width: 100%;
+    
+}
