@@ -1,7 +1,226 @@
-@media screen and (max-width: 576px) {
+/*  mobile view */
 
+@media screen and (max-width: 425px) {
 
+    main,
+    header {
+        margin: 0px 20px;
+    }
 
+    /* navbar */
+    nav {
+        margin-bottom: 20px;
+    }
+
+    .nav-container h1 {
+        font-size: 20px;
+    }
+
+    /* banner */
+
+    .items-container {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block !important;
+    }
+
+    .banner {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+    }
+
+    .banner p {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .banner-input {
+        margin-top: 15px;
+        padding: 10px 15px;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .out-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* our tour */
+    .our-tour {
+        flex-direction: column;
+    }
+
+    .tour-text h1 {
+        text-align: center;
+    }
+
+    .tour-img img {
+        width: 100%;
+    }
+
+    /* destination  */
+    .destination-img-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    .destination-img-container div {
+        grid-column: span 1;
+    }
+
+    /* deals and discount */
+    .fast-card {
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+
+    .card-text {
+        margin-top: 100px;
+        width: 100%;
+        padding: 30px;
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(2.5px);
+    }
+
+    .fast-line {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .second-card {
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .second-card-text {
+        margin-top: 100px;
+        width: 100%;
+        padding: 30px;
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(2.5px);
+    }
+
+    .third-card {
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+
+    /* why choose us */
+    .row-one {
+        flex-direction: column;
+    }
+
+    .third-child {
+        width: 100%;
+    }
+
+    .video {
+        width: 100%;
+        height: 70%;
+    }
+
+    /* newslatter */
+    .newslater {
+        flex-direction: column;
+    }
+
+    .newslater-img img {
+        width: 100%;
+    }
+
+    .stiker {
+        color: white;
+        text-align: center;
+        position: absolute;
+        bottom: 25px;
+        right: 5px;
+        white-space: nowrap;
+        transform: rotate(-19.628deg);
+        border-radius: 16px;
+        background: #ff5400;
+        font-size: 10px;
+        padding: 10px 15px;
+    }
+
+    .stiker span {
+        font-size: 16px;
+    }
+
+    /* footer */
+    footer {
+        padding: 0px 20px;
+    }
+
+    .footer-logo {
+        gap: 0px;
+        margin: 50px auto;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-icon a i {
+        font-size: 2em;
+    }
+
+    .social-icon {
+        justify-content: space-between;
+        padding-top: 0px;
+    }
+
+    .footer-text {
+        margin: 0px 0px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    .social-icon a {
+        text-decoration: none;
+        padding: 10px;
+        margin-left: 0px;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+
+    .footer-logo h1 {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+}
+
+/*  tablet view*/
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+    main,
+    header {
+        margin: 0px 20px;
+    }
+
+    .menu-icon {
+        display: block !important;
+    }
 
     .nav-container {
         flex-wrap: nowrap;
@@ -16,8 +235,6 @@
         display: none;
     }
 
-
-
     .banner {
         width: 335px;
         height: 483px;
@@ -25,11 +242,9 @@
         width: 100%;
     }
 
-
-
     .banner-text h1 {
         text-align: center;
-        color: #FFF;
+        color: #fff;
         font-family: Mulish;
         font-size: 28px;
         font-style: normal;
@@ -39,7 +254,7 @@
     }
 
     .banner-text p {
-        color: #FFF;
+        color: #fff;
         text-align: center;
         font-family: Mulish;
         font-size: 14px;
@@ -47,130 +262,7 @@
         font-weight: 400;
         line-height: 21px;
         margin-left: 70px;
-
     }
-
-    .out-box {
-        text-align: center;
-        display: flex;
-        width: 287px;
-        padding: 16px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
-    }
-
-    .out-box .banner-input {
-        width: 255px;
-        height: 52px;
-        flex-shrink: 0;
-    }
-
-
-
-    .our-tour {
-        flex-direction: column;
-        margin-bottom: 550px;
-
-    }
-
-    .tour-img {
-        margin-top: 30px;
-        margin-bottom: 100px;
-        height: 100%;
-    }
-
-
-    .img-one,
-    .img-two,
-    .img-three {
-        display: none;
-    }
-
-    .destination-img p {
-        display: none;
-    }
-
-    .responsive-destination {
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 100%;
-        height: 300px;
-        position: relative;
-        margin-bottom: 1800px;
-    }
-
-    .responsive-destination img {
-        width: 500px;
-        height: 300px;
-        margin: 10px auto;
-    }
-
-
-
-    .card-text {
-        width: 303px;
-        height: 297px;
-        flex-shrink: 0;
-    }
-    .second-card-text{
-        width: 303px;
-        height: 297px;
-        flex-shrink: 0;
-    }
-    
-    .fast-line {
-        color: #010111;
-        font-family: Mulish;
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-
-    .card-discription {
-        font-size: 0.8em;
-    }
-
-    .row-one{ 
-        flex-direction: column;
-    }
-
-    .third-child{
-        width: 100%;
-    }
-
-    .newslater{
-        flex-direction: column;
-    }
-    .newsletter-text{
-        width: 50%;
-        margin:  0 auto;
-    }
-    .newslater-img img{
-        width: 500px;
-    }
-    .newslater-img .stiker{
-        width: 150px;
-        height: 100px ;
-        margin-left: 340px;
-    }
-
-    .stiker{
-        font-size: 0.9em;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }

@@ -1,170 +1,131 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap");
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 'Mulish', sans-serif;
-
+    font-family: "Mulish", sans-serif;
 }
 
-
-body {
-    font-family: 'Mulish', sans-serif;
+/* shared styles */
+.button {
+    background-color: #ff5400;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 15px;
+    margin-top: 50px;
 }
 
+main,
 header {
-    max-width: 1170px;
+    max-width: 1150px;
     margin: 0 auto;
-    padding: 10px;
 }
 
+/* nav styles */
 nav {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 50px;
+    padding: 25px 0px;
 }
 
 .nav-container {
     display: flex;
     align-items: center;
-    width: 50%;
 }
 
 .nav-container img {
     width: 50px;
     margin-right: 15px;
-
-
 }
 
 .nav-container h1 {
     font-size: 26px;
     font-weight: 800;
-
 }
 
 .nav-container span {
-    color: #FF5400;
+    color: #ff5400;
 }
 
 .items-container {
-    /* border: #FF5400 1px solid; */
     display: flex;
-    font-size: 16px;
-    font-weight: 400;
-    width: 50%;
     align-items: center;
-    justify-content: space-between;
+    gap: 40px;
+    justify-content: end;
+}
+
+.items-container h3:hover {
+    color: #ff5400;
 }
 
 .items-container .home {
-    color: #FF5400;
+    color: #ff5400;
 }
 
-.items-container img {
+.menu-icon {
     display: none;
 }
 
 /* banner section.... */
-/* banner section.... */
-/* banner section.... */
 
 .banner {
-    max-width: 1170px;
-    height: 500px;
-    margin-top: 100px;
-    margin: 0 auto;
-    border-radius: 20px;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./Images/Group\ 13\ \(1\)\ \(1\).png);
-    text-align: center;
+    height: 65vh;
+    margin: 100px auto 0 auto;
+    border-radius: 15px;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("./Images/Group 13 (1) (1).png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     justify-content: center;
-    position: relative;
-
-}
-
-.banner-text {
-    position: absolute;
-    margin-top: -20px;
-    margin-left: -20px;
-
-
-}
-
-.banner-text h1 {
-    color: #FFF;
-    font-family: Mulish;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    margin-top: 100px;
-    margin-left: 200px;
-}
-
-.banner-text p {
-    color: #FFF;
-    font-family: Mulish;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    margin-left: 200px;
-}
-.out-box {
-    width: 150px;
-    opacity: 70%;
-    background: (rgba(255, 255, 255, 0.30));
-    border-radius: 16px;
     display: flex;
-    padding: 16px;
-    margin-left: 140px;
-    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
+.banner h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
 
+.banner p {
+    font-size: 20px;
+}
 
-.out-box .banner-input {
-    width: 170px;
-    height: 50px;
-    flex-shrink: 0;
-    align-items: center;
-    justify-content: center;
-    border-radius: 16px;
+.banner-input {
+    margin: 35px 15px 0px 0px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: none;
 }
 
 .out-box button {
-    background-color: #FF5400;
+    background-color: #ff5400;
+    color: white;
 }
 
 /* main section...... */
-/* main section...... */
-/* main section...... */
-
+/* our tour section */
 
 .our-tour {
-    max-width: 1170px;
-    margin: 100px auto;
+    margin: 120px 0px;
     display: flex;
-    height: 550px;
-    padding: 10px;
-    position: relative;
-
-}
-
-.tour-text {
-    width: 100%;
-}
-
-.tour-img {
-    size-adjust: cover;
-    width: 100%;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .tour-text h1 {
     color: #131318;
-    font-family: Mulish;
     font-size: 40px;
     font-weight: 800;
 }
@@ -172,47 +133,24 @@ nav {
 .tour-text p {
     margin: 20px 0;
     color: #131318;
-    font-family: Mulish;
     font-size: 22px;
     font-weight: 500;
-
 }
 
 .tour-text li {
     color: #131318;
-    font-family: Mulish;
     font-size: 20px;
     font-weight: 500;
-
-}
-
-.tour-text button {
-    font-family: Mulish;
-    background-color: #FF5400;
-    border-radius: 16px;
-    font-size: 25px;
-    font-weight: 500;
-    padding: 10px;
-    margin-top: 120px;
-
-
 }
 
 /* destination section...... */
-/* destination section...... */
-/* destination section...... */
 
-.responsive-destination{
+.responsive-destination {
     display: none;
 }
 
 .destination {
-    /* border: 2px solid red; */
-    background-color: aliceblue;
-    max-width: 1170px;
     margin: 100px auto;
-    position: relative;
-    padding: 10px;
 }
 
 .destination-text {
@@ -221,140 +159,189 @@ nav {
     justify-content: center;
 }
 
+.destination-text h1 {
+    font-size: 45px;
+}
+
 .destination-text p {
-    margin: 20px;
+    margin: 20px 0px 60px;
 }
 
-.line-one {
+.destination-img-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 24px;
-
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
 }
 
-/* .line-one .img-one{
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 03)) url(./Images/Rectangle\ 5.png);
-
-} */
-
-
-.line-one img {
-    width: 100%;
-
+.destination-img-container div {
+    height: 300px;
+    border-radius: 15px;
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.line-one .maldives {
-    position: absolute;
-    font-size: 50px;
-    margin-top: 100px;
-    margin-left: 120px;
-    color: #FFF;
-
+.img1 {
+    grid-column: span 6;
+    background-image: url("./Images/Rectangle 5.png");
 }
 
-.line-one .indonesia {
-    position: absolute;
-    font-size: 50px;
-    margin-top: 100px;
-    margin-left: 630px;
-    color: #FFF;
+.img2 {
+    grid-column: span 6;
+    background-image: url("./Images/Rectangle 6.png");
 }
 
-
-
-.line-two {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 24px;
-    margin: 24px 0;
+.img3 {
+    grid-column: span 3;
+    background-image: url("./Images/Rectangle 7.png");
 }
 
-.line-two img {
-    width: 100%;
+.img4 {
+    grid-column: span 6;
+    background-image: url("./Images/Rectangle 8.png");
+}
+
+.img5 {
+    grid-column: span 3;
+    background-image: url("./Images/Rectangle 9.png");
+}
+
+.img6 {
+    grid-column: span 5;
+    background-image: url("./Images/Rectangle 10.png");
+}
+
+.img7 {
+    grid-column: span 7;
+    background-image: url("./Images/Rectangle 11.png");
+}
+
+/*deals discount section*/
+
+.deals-discount {
+    margin: 100px 0px;
+}
+
+.deals-discount-text h1 {
+    font-size: 45px;
+    text-align: center;
+}
+
+.deals-discount-text p {
+    margin: 20px 0px 60px;
+    text-align: center;
+}
+
+.fast-card {
+    padding: 60px;
+    border-radius: 15px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("./Images/Group 39.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.second-card {
+    margin: 50px 0px;
+    padding: 60px;
+    border-radius: 15px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("./Images/Group 40.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.third-card {
+    padding: 60px;
+    border-radius: 15px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("./Images/Group 39.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.card-text {
+    padding: 30px;
+    width: 50%;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2.5px);
+}
+
+.second-card-text {
+    padding: 30px;
+    width: 50%;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2.5px);
+}
+
+.fast-line {
+    display: flex;
+    justify-content: space-around;
+}
+
+.one-icon {
+    display: flex;
+}
+
+.two-icon {
+    display: flex;
+}
+
+.three-icon {
+    display: flex;
+}
+
+.card-discription h2 {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.card-discription h3 {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #ff5400;
+}
+
+.card-discription p {
+    margin: 20px auto;
+}
+
+.second-card-text h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.second-card-text h3 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #ff5400;
+}
+
+.deals-discount-button {
+    text-align: center;
+}
+
+.our-tour video {
     height: 100%;
-}
-
-.line-two .srilanka {
-    position: absolute;
-    font-size: 46px;
-    margin-top: 100px;
-    margin-left: 30px;
-    color: #FFF;
-
-}
-
-.line-two .america {
-    position: absolute;
-    font-size: 46px;
-    margin-top: 100px;
-    margin-left: 350px;
-    color: #FFF;
-}
-
-.line-two .kashmir {
-    position: absolute;
-    font-size: 46px;
-    margin-top: 100px;
-    margin-left: 800px;
-    color: #FFF;
-}
-
-.line-two .img-two {
-    grid-column-start: 2;
-    grid-column-end: 4;
-}
-
-
-.line-three {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 24px;
-}
-
-.line-three img {
     width: 100%;
-    height: 100%;
-}
-
-.line-three .bangladesh {
-    position: absolute;
-    font-size: 46px;
-    margin-top: 100px;
-    margin-left: 75px;
-    color: #FFF;
-
-}
-
-.line-three .bandarban {
-    position: absolute;
-    font-size: 46px;
-    margin-top: 100px;
-    margin-left: 550px;
-    color: #FFF;
-}
-
-
-.line-three .img-one {
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
-.line-three .img-two {
-    grid-column-start: 3;
-    grid-column-end: 6;
-
-}
-
-/* destination section ends there..... */
-/* destination section ends there..... */
-/* destination section ends there..... */
-
-
-.why-choose-us {
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 10px;
-
 }
 
 .why-choose-us h1 {
@@ -365,25 +352,19 @@ nav {
 .why-choose-us .parant-p {
     align-items: center;
     text-align: center;
-
 }
-
-
 
 .why-choose-us h1 {
     font-size: 2em;
     font-weight: 800;
     margin-bottom: 20px;
-
 }
 
 .row-one {
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 10px;
+    margin: 50px auto;
+    padding: 10px 0px;
     display: flex;
     gap: 20px;
-
 }
 
 .one-child {
@@ -417,50 +398,38 @@ nav {
     border-radius: 16px;
     border: 3px dotted rgba(209, 117, 13, 0.2);
     background: rgba(226, 39, 39, 0.05);
-
 }
 
 .third-child h3 {
     margin: 20px auto;
 }
 
+.video {
+    width: 80%;
+    height: 500px;
+}
 
-/* Newsletter Part..... */
-/* Newsletter Part..... */
 /* Newsletter Part..... */
 
 .newslater {
-    max-width: 1170px;
     margin: 100px auto;
-    padding: 10px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
 }
 
-.newsletter-text {
-    width: 100%;
-}
-
-.newslater-img {
-    size-adjust: cover;
-    width: 100%;
-
-}
-
 .stiker {
-    justify-content: center;
-    /* align-items: center; */
-    text-align: center;
+    color: white;
     position: absolute;
-    width: 300px;
-    height: 120px;
+    text-align: center;
     transform: rotate(-19.628deg);
-    flex-shrink: 0;
     border-radius: 16px;
-    background: #FF5400;
-    font-size: 1.2em;
-    margin-top: -180px;
-    margin-left: 360px;
+    background: #ff5400;
+    font-size: 1em;
+    padding: 10px 15px;
+    right: 15px;
+    bottom: 50px;
 }
 
 .stiker span {
@@ -483,84 +452,61 @@ nav {
 }
 
 .input-fild .class-one {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 800;
     border-radius: 20px;
     margin-bottom: 20px;
     width: 300px;
     height: 52px;
-    flex-shrink: 0;
     padding: 20px;
 }
 
 .input-fild button {
-    background-color: #FF5400;
+    background-color: #ff5400;
 }
 
-/* footer section...... */
-/* footer section...... */
 /* footer section...... */
 
 footer {
-    border-radius: 20px;
-    margin: 0 auto;
-    margin-top: 100px;
-    max-width: 1440px;
-    height: 600px;
+    margin: 100px 0px 0px 0px;
     background: rgba(19, 19, 24, 0.05);
-    position: relative;
-
-}
-
-.main-footer {
-
-    width: 100%;
-
 }
 
 .social-icon {
-    justify-content: center;
     display: flex;
+    justify-content: center;
     padding-top: 250px;
-
-
 }
 
 .social-icon a {
     text-decoration: none;
     padding: 10px;
     margin: 20px;
-    background-color: #FFF;
+    background-color: #fff;
     border-radius: 50%;
-
 }
 
 .social-icon a i {
     font-size: 3em;
     color: black;
-
 }
 
-
-/* Hover  Effect social-icon..... */
-/* Hover  Effect social-icon..... */
 /* Hover  Effect social-icon..... */
 
 .social-icon a:hover {
     background-color: #070211;
     transition: 0.5s;
-
 }
 
 .social-icon a:hover i {
     color: white;
     transition: 0.5s;
-
 }
 
 .footter-button {
-
     padding: 30px;
     text-align: center;
-
 }
 
 .designer {
@@ -575,9 +521,7 @@ footer {
 }
 
 .footer-address {
-
     border: 1px white dotted;
-
 }
 
 .footer-logo {
@@ -590,7 +534,7 @@ footer {
 }
 
 .footer-logo span {
-    color: #FF5400;
+    color: #ff5400;
 }
 
 .footer-text {
@@ -599,186 +543,4 @@ footer {
     align-items: center;
     display: flex;
     justify-content: center;
-}
-
-
-
-
-
-/* Extra mark part..... */
-/* Extra mark part..... */
-/* Extra mark part..... */
-
-.deals-discount {
-    max-width: 1170px;
-    padding: 10px;
-    margin: 100px auto;
-    
-}
-
-.deals-discount-text {
-    margin: 10px auto;
-    width: 50%;
-    text-align: center;
-
-}
-
-.fast-card {
-    border: #13131800 1px dotted;
-    max-width: 1170px;
-    height: 500px;
-    margin: 20px auto;
-    padding: auto 50px;
-    border-radius: 20px;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Images/Group\ 39.png);
-
-}
-
-.second-card {
-    border: #13131800 1px dotted;
-    max-width: 1170px;
-    height: 500px;
-    margin: 50px auto;
-    padding: auto 50px;
-    border-radius: 20px;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Images/Group\ 40.png);
-
-}
-
-.third-card {
-    border: #13131800 1px dotted;
-    max-width: 1170px;
-    height: 500px;
-    margin: 50px auto;
-    padding: auto 50px;
-    border-radius: 20px;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Images/Group\ 39.png);
-
-}
-
-.card-text {
-    padding: 20px;
-    height: 100%;
-    margin: 50px auto;
-    margin-left: 40%;
-    width: 550px;
-    height: 350px;
-    flex-shrink: 0;
-    border-radius: 16px;
-    border: 2px solid #FFF;
-    background: rgba(255, 255, 255, 0.80);
-    backdrop-filter: blur(2.5px);
-
-
-}
-
-.second-card-text {
-    padding: 20px;
-    height: 100%;
-    margin: 50px auto;
-    margin-right: 40%;
-    width: 550px;
-    height: 350px;
-    flex-shrink: 0;
-    border-radius: 16px;
-    border: 2px solid #FFF;
-    background: rgba(255, 255, 255, 0.80);
-    backdrop-filter: blur(2.5px);
-}
-
-.fast-line {
-    display: flex;
-    justify-content: space-around;
-}
-
-.one-icon {
-    display: flex;
-}
-
-.two-icon {
-    display: flex;
-}
-
-.three-icon {
-    display: flex;
-}
-
-.card-discription h2 {
-
-    margin-top: 20px;
-    font-size: 1.5em;
-}
-
-.card-discription h3 {
-
-    margin-top: 20px;
-    font-size: 1.2em;
-    color: #FF5400;
-}
-
-.card-discription p {
-    margin: 20px auto;
-}
-
-
-.card-text button {
-    font-family: Mulish;
-    background-color: #FF5400;
-    border-radius: 16px;
-    font-size: 25px;
-    font-weight: 500;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-.second-card-text button {
-    font-family: Mulish;
-    background-color: #FF5400;
-    border-radius: 16px;
-    font-size: 25px;
-    font-weight: 500;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-.second-card-text h2 {
-    font-size: 1.5em;
-    margin-top: 20px;
-
-}
-
-.second-card-text h3 {
-    font-size: 1.2em;
-    margin-top: 20px;
-    color: #FF5400;
-
-}
-
-.deals-discount-button {
-    margin: 10px auto;
-    width: 25%;
-    text-align: center;
-}
-
-.deals-discount-button button {
-    font-size: 1.5em;
-    width: 210px;
-    height: 52px;
-    font-size: 20px;
-    flex-shrink: 0;
-    font-weight: 800;
-    border-radius: 16px;
-    color: #FFF;
-    text-align: center;
-    font-family: Mulish;
-    font-style: normal;
-    line-height: normal;
-    background-color: #FF5400;
-
-}
-
-.our-tour video{
-    height: 100%;
-    width: 100%;
-    
 }
